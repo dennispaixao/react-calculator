@@ -9,7 +9,7 @@ class Button extends Component {
   render(){
 
     return(
-      <input type="button" onClick={this.sendToParent} className="btn" value={this.props.name} /> 
+      <input type="button"  onClick={this.sendToParent} className="btn" value={this.props.name} /> 
     )
   }
 }

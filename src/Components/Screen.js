@@ -9,7 +9,7 @@ class Screen extends Component {
   render(){
   
     return(
-     <div id="Screen">
+     <div className="Screen">
          <p>{this.props.current}</p>
          <p>{this.props.result}</p>
      </div>

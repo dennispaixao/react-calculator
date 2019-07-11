@@ -1,4 +1,47 @@
-.Button{
-    background:blue;
+$fontEborder: rgb(27, 31, 48);
+$bg-btn :#ccc;
+$orange:rgb(255, 51, 0);
+.btn-container{
+    display:flex;
+    flex:1;
+    flex-wrap:wrap;
 }
-    
+.btn{
+    width:25%;   
+    background-color:$bg-btn;
+    color:$fontEborder;
+    font-size:25px;
+    border:1px solid $fontEborder;
+    outline: none;
+}   
+
+
+.btn:nth-child(17){
+    width:50% ;
+    border-radius:0 0 0 10px; 
+}
+
+.btn:nth-child(4n),.btn:last-child{
+    background:$orange;
+    color:white;
+}
+
+.btn:last-child{
+    border-radius: 0 0 10px 0;
+}
+
+.btn:nth-child(-n +3), .btn:nth-child(18){
+    background: darken($bg-btn, 5%)
+}
+
+.btn:hover{
+    background:darken($bg-btn, 10%);
+    cursor:pointer;
+}
+
+
+.btn:nth-child(4n):hover,.btn:last-child:hover{
+    background:darken($orange, 10%);
+    cursor:pointer;
+}
+

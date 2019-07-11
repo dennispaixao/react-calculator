@@ -4,15 +4,20 @@
 @import './Screen.scss';
 @import './Button.scss';
 
-
+html{height:100%; width:100%;}
 body {
+  height:100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  background: #003d1c;
+  background-image: url(../bg.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: top;
 }
 
 code {

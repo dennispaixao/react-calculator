@@ -1,0 +1,13 @@
+$bg-screen: rgba(32, 42, 43, 0.658);
+.Screen{
+    height: 160px;
+    width:100%;
+    background: $bg-screen;
+    font-size: 33px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+    color:white;
+    margin-right: 20px;
+    border-radius: 10px 10px 0 0;
+    
+    }
