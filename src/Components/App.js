@@ -19,6 +19,9 @@ class App extends Component {
   doMath = (num1, operator, num2) => {
     switch (operator) {
       case 'x': operator = '*'
+        break;
+      case '÷': operator = '/'
+        
     }
     const result = eval(num1 + operator + num2);
     this.setState({ result, num1: [result], num2: [] })
@@ -31,8 +34,10 @@ class App extends Component {
       case /[+x\-÷]/.test(button):
         if (!this.state.num2.length == 0) {
           this.doMath(this.state.num1, this.state.operator, this.state.num2)
+        }else{
+           this.setState({ operator: button, current: button })
         }
-        this.setState({ operator: button, current: button })
+       
         break
       case /[\d]/.test(button):
         if (this.state.operator.length == '') {

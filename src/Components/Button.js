@@ -7,7 +7,6 @@ class Button extends Component {
         this.props.handleClick(this.props.name)
     };
   render(){
-
     return(
       <input type="button"  onClick={this.sendToParent} className="btn" value={this.props.name} /> 
     )
